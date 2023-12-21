@@ -60,8 +60,8 @@ Para poder realizar la configuración del sistema desde el USB, se deben seguir 
     └── oxsfs.sh                        # Script que se encarga de ejecutar la configuración
     ```
 
-    > [!NOTE]
-    > Los _scripts_ `overlaySFS.sh`, `overlayRoot.sh` se mantienen actualizados en el repositorio [overlay-Raspbian](https://github.com/OxDAbit/overlay-Raspbian)
+> [!NOTE]
+> Los _scripts_ `overlaySFS.sh`, `overlayRoot.sh` se mantienen actualizados en el repositorio [overlay-Raspbian](https://github.com/OxDAbit/overlay-Raspbian)
 
 2. Abrir el archivo `oxsfs.sh` y modificar las variables globales `wifi_ssid` y `wifi_pswd` para poder establecer la conexión de red correctamente
 3. Conectamos el USB a la **Raspberry Pi**
@@ -85,12 +85,12 @@ Para poder realizar la configuración del sistema desde el USB, se deben seguir 
     mount /dev/sda2 /media/oxusb/
     ```
 
-    > [!TIP]
-    > Podemos comprobar mediante el uso del comando `df /media/oxusb` que el volumen se ha montado correctamente
-    >```plaintext
-    >Filesystem     1K-blocks  Used Available Use% Mounted on
-    >/dev/sdb2        7411556  1120   7410436   1% /media/oxusb
-    >```
+> [!TIP]
+> Podemos comprobar mediante el uso del comando `df /media/oxusb` que el volumen se ha montado correctamente
+>```plaintext
+>Filesystem     1K-blocks  Used Available Use% Mounted on
+>/dev/sdb2        7411556  1120   7410436   1% /media/oxusb
+>```
 
 8. Por último, llega el momento de ejecutar el _script_, el cual tiene 2 tipos de ejecución:
     1. Sin parámetro de configuración. El _script_ realizará la configuración del dispositivo sin habilitar la conexión WiFi (el dispositivo se conectará por ETH):
@@ -101,8 +101,8 @@ Para poder realizar la configuración del sistema desde el USB, se deben seguir 
         ./oxsfs.sh
         ```
 
-    > [!IMPORTANT]
-    > Si se selecciona esta opción se debe conectar el dispositivo a internet mediante un cable Ethernet, de lo contrario, el _script_ no podrá realizar la instalación de los paquetes
+> [!IMPORTANT]
+> Si se selecciona esta opción se debe conectar el dispositivo a internet mediante un cable Ethernet, de lo contrario, el _script_ no podrá realizar la instalación de los paquetes
 
     2. Con parámetro de configuración. El _script_ realizará la configuración del dispositivo hablitando la conexión WiFi (el dispositivo se podrá conectar por WiFi y por ETH) detallando el _ssid_ y _password_ informados en las variables globales:
 
@@ -112,8 +112,8 @@ Para poder realizar la configuración del sistema desde el USB, se deben seguir 
         ./oxsfs.sh wifi
         ```
 
-    > [!NOTE]
-    > El funcionamiento del _script_ se detalla en el documento [Changelog oxsfs](/docs/changelog%20oxsfs.md)
+> [!NOTE]
+> El funcionamiento del _script_ se detalla en el documento [Changelog oxsfs](/docs/changelog%20oxsfs.md)
 
 9. Tras finalizar la ejecución del _script_ el dispositivo se reiniciará para aplicar los cambios y arrancará con el sistema SFS habilitado.
 
