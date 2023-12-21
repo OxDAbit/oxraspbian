@@ -101,11 +101,11 @@ Para poder realizar la configuración del sistema desde el USB, se deben seguir 
         ./oxsfs.sh
         ```
 
-> [!IMPORTANT]
-> Si se selecciona esta opción se debe conectar el dispositivo a internet mediante un cable Ethernet, de lo contrario, el _script_ no podrá realizar la instalación de los paquetes
+        **NOTA**: Si se selecciona esta opción se debe conectar el dispositivo a internet mediante un cable Ethernet, de lo contrario, el _script_ no podrá realizar la instalación de los paquetes
+
 
     2. Con parámetro de configuración. El _script_ realizará la configuración del dispositivo hablitando la conexión WiFi (el dispositivo se podrá conectar por WiFi y por ETH) detallando el _ssid_ y _password_ informados en las variables globales:
-
+    
         ```bash
         cd /media/oxusb
         chmod +x oxsfs.sh
