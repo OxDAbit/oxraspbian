@@ -60,6 +60,9 @@ Para poder realizar la configuración del sistema desde el USB, se deben seguir 
     └── oxsfs.sh                        # Script que se encarga de ejecutar la configuración
     ```
 
+    > [!NOTE]
+    > Los _scripts_ `overlaySFS.sh`, `overlayRoot.sh` se mantienen actualizados en el repositorio [overlay-Raspbian](https://github.com/OxDAbit/overlay-Raspbian)
+
 2. Abrir el archivo `oxsfs.sh` y modificar las variables globales `wifi_ssid` y `wifi_pswd` para poder establecer la conexión de red correctamente
 3. Conectamos el USB a la **Raspberry Pi**
 4. Conectamos un teclado y una pantalla al dispositivo para poder efecutar la configuración
