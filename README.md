@@ -32,8 +32,8 @@ Guía con el detalle del montaje del sistema operativo _customizado_ desde cero:
 4. Desconectar el disco y volver a conectar al ordenador puesto que al finalizar el proceso de grabación el volumen se desmonta de forma automática
 5. Abrir la partición `bootfs` que se montará en el ordenador al volver a conectar la SSD o la SD y editar el archivo `cmdline.txt` eliminando el último parámetro `init=/usr/lib/raspberrypi-sys-mods/firstboot`
 
-    > [!CAUTION]
-    > Es muy importante realizar el último paso antes de iniciar por primera vez el dispositivo se , de lo contrario, la partición correspondiente al `rootfs` se extenderá a todo el disco y el _script_ no podrá crear la tercera partición persistente de datos `/oxdata`
+> [!CAUTION]
+> Es muy importante realizar el último paso antes de iniciar por primera vez el dispositivo se , de lo contrario, la partición correspondiente al `rootfs` se extenderá a todo el disco y el _script_ no podrá crear la tercera partición persistente de datos `/oxdata`
 
 ## Primer arranque
 
@@ -101,8 +101,8 @@ Para poder realizar la configuración del sistema desde el USB, se deben seguir 
         ./oxsfs.sh
         ```
 
-        > [!IMPORTANT]
-        > Si se selecciona esta opción se debe conectar el dispositivo a internet mediante un cable Ethernet, de lo contrario, el _script_ no podrá realizar la instalación de los paquetes
+    > [!IMPORTANT]
+    > Si se selecciona esta opción se debe conectar el dispositivo a internet mediante un cable Ethernet, de lo contrario, el _script_ no podrá realizar la instalación de los paquetes
 
     2. Con parámetro de configuración. El _script_ realizará la configuración del dispositivo hablitando la conexión WiFi (el dispositivo se podrá conectar por WiFi y por ETH) detallando el _ssid_ y _password_ informados en las variables globales:
 
@@ -112,8 +112,8 @@ Para poder realizar la configuración del sistema desde el USB, se deben seguir 
         ./oxsfs.sh wifi
         ```
 
-        > [!NOTE]
-        > El funcionamiento del _script_ se detalla en el documento [Changelog oxsfs](/docs/changelog%20oxsfs.md)
+    > [!NOTE]
+    > El funcionamiento del _script_ se detalla en el documento [Changelog oxsfs](/docs/changelog%20oxsfs.md)
 
 9. Tras finalizar la ejecución del _script_ el dispositivo se reiniciará para aplicar los cambios y arrancará con el sistema SFS habilitado.
 
