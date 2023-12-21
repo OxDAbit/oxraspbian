@@ -1,5 +1,11 @@
 # Changelog `oxsfs.sh`
 
+## v.0.1.7
+
+- DATE: **21/12/2023**
+- FEATURES:
+  - La carpeta de contenidos `/oxdata/content/sys` pasa a llamarse `/oxdata/content/system_base` y de esta forma encaja con la distribución de archivos `sfs`
+
 ## v.0.1.6
 
 - DATE: **21/12/2023**

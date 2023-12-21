@@ -4,7 +4,7 @@
 #                       oxsfs.sh                        #
 #                                                       #
 # Purpose:      oxsfs raspbian init configuration       #
-# Version:      v0.1.6                                  #
+# Version:      v0.1.7                                  #
 # Created:      21/12/2023                              #
 #                                                       #
 # Author:       David Alvarez Medina aka OxDA_bit       #
@@ -111,7 +111,7 @@ EOF
         echo "[INFO]	Creating $partition_name folder structure"
 
         # Create custom folders inside /oxdata partition
-        mkdir -p /oxdata/content/sys
+        mkdir -p /oxdata/content/system_base
         mkdir -p /oxdata/logs
         mkdir -p /oxdata/SystemUpdate
         mkdir -p /oxdata/temp
