@@ -47,7 +47,7 @@ Con la idea de automatizar todo el proceso de montaje del sistema operativo, se 
 
 Para poder realizar la configuración del sistema desde el USB, se deben seguir los pasos detallados a continuación:
 
-1. Conectar el USB a nuestro ordenador y crear la estructura de carpetas abajo detallada copiando, directamente del repositorio de Github, el contenido de la carpeta [oxusb](https://github.com/OxDAbit/oxraspbian/oxusb)
+1. Conectar el USB a nuestro ordenador y crear la estructura de carpetas abajo detallada copiando, directamente del repositorio de Github, el contenido de la carpeta [oxusb](https://github.com/OxDAbit/oxraspbian/tree/main/oxusb)
 
     ```plaintext
     ├── content                         # Archivos correspondientes a los contenidos de configuración del sistema
