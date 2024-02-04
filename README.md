@@ -115,7 +115,7 @@ Para poder realizar la configuración del sistema desde el USB, se deben seguir 
 > [!NOTE]
 > El funcionamiento del _script_ se detalla en el documento [Changelog oxsfs](/docs/changelog%20oxsfs.md)
 
-9. Tras finalizar la ejecución del _script_ el dispositivo se reiniciará para aplicar los cambios y arrancará con el sistema SFS habilitado.
+9. Tras finalizar la ejecución del _script_ el dispositivo se reiniciará para aplicar los cambios y arrancará con el sistema SFS deshabilitado.
 
 ## Gestión modo de arranque `overlayFS`
 
